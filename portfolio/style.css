@@ -1,0 +1,104 @@
+/* Fonte */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600&display=swap');
+/* Cores */
+:root{
+  --cor-fundos: #212226;
+  --cor-primaria: #339d90;
+  --cor-secundaria: #a98ace;
+  --cor-terciaria: #E8DEDE;
+  --branco: #fff;
+  --preto: #000;
+}
+/* Estilos Gerais */
+*{
+  box-sizing: border-box;
+}
+html, body{
+  margin: 0;
+}
+body{
+  background-color: var(--cor-fundos);
+}
+body, button, input, select, textarea{
+  font-family: 'Quicksand', sans-serif;
+  color: var(--branco);
+}
+h1{
+  font-size: 44px;
+}
+h2{
+  font-size: 30px;
+}
+p{
+  color: var(--cor-terciaria);
+  line-height: 1.4em;
+}
+button{
+  background-color: var(--cor-primaria);
+  border: 0;
+  border-radius: 16px;
+  padding: 13px 35px;
+  color: var(--branco);
+  font-weight: 600;
+  cursor: pointer;
+}
+button:hover{
+  background-color: var(--cor-secundaria);
+}
+/* Estilos */
+header{
+  width: 100%;
+  height: calc(100vh - 90px);
+  display: flex;
+  align-items: center;
+}
+header .container{
+  width: 60%;
+  height: fit-content;
+  padding: 0px 100px;
+}
+header .container h1{
+  color: var(--cor-primaria);
+  margin: 0;
+}
+header .container h2{
+  margin: 0;
+}
+header .container button{
+  margin-top: 30px;
+}
+nav{
+  width: 100%;
+  height: 90px;
+  padding: 20px 100px;
+  position: sticky;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  top: 0;
+  background-color: var(--cor-fundos);
+}
+nav img{
+  height: 45px;
+}
+nav ul{
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  padding-left: 20%;
+}
+nav ul li{
+  display: inline-block;
+}
+nav ul li a{
+  font-size: 18px;
+  text-decoration: none;
+  font-weight: 600;
+  color: var(--cor-primaria);
+}
+nav ul li a:hover{
+  color: var(--cor-secundaria);
+}
+section{
+  height: calc(100vh - 90px);
+}
